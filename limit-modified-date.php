@@ -157,7 +157,7 @@ class Limit_Modified_Date {
 		$val = get_post_meta( get_the_ID(), $this->meta_key, true );
 
 		echo '<div class="misc-pub-section">';
-			echo '<input type="checkbox" name="' . esc_attr( $this->meta_key ) . '" id="' . esc_attr( $this->meta_key ) . '" value="1"' . checked( $val, '1', false ) . ' />';
+			echo '<input type="checkbox" name="' . esc_attr( $this->meta_key ) . '" id="' . esc_attr( $this->meta_key ) . '" value="1"' . checked( $val, '1', true ) . ' />';
 			echo '<label for="' . esc_attr( $this->meta_key ) . '">' . esc_html__( 'Don\'t update the modified date', 'limit-modified-date' ) . '</label>';
 		echo '</div>';
 	}

@@ -22,7 +22,7 @@ export class LimitModifiedDate extends Component {
 			<PluginPostStatusInfo>
 				<CheckboxControl
 					label={ __( 'Don\'t update the modified date' ) }
-					checked={ LimitModifiedDate }
+					checked={ true }
 					onChange={ ( LimitModifiedDate ) => {
 						updateMeta( { limit_modified_date: LimitModifiedDate || false } );
 					} }
